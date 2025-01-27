@@ -1,10 +1,11 @@
+import { Layout } from "../components/layout/Layout";
 import { MindMapComponent } from "../components/mindmap/MindMapComponent";
 import "../styles/components/mindmap.css";
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <MindMapComponent />
-    </div>
+    </Layout>
   );
 }
