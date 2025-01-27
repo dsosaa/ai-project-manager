@@ -1,9 +1,14 @@
 import React from "react";
 
-export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-screen">
-      <main>{children}</main>
+    <div className="layout">
+      <header className="header">
+        <h1>AI Project Manager</h1>
+      </header>
+      <main className="main-content">
+        {children}
+      </main>
     </div>
   );
 };

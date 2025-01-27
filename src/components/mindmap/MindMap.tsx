@@ -1,10 +1,14 @@
 import React from "react";
-import { Layout } from "../layout/Layout";
 
-export const MindMap: React.FC = () => {
+export const MindMap = () => {
   return (
     <div className="mindmap-container">
-      <h2>Mind Map</h2>
+      <h2>AI Project Manager</h2>
+      <div className="mindmap-content">
+        <div className="mindmap-canvas">
+          {/* Mindmap nodes will be rendered here */}
+        </div>
+      </div>
     </div>
   );
 };
